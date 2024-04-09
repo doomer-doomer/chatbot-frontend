@@ -1,38 +1,115 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;600&family=Inter:wght@100..900&display=swap');
+
+.parent{
+  font-family:'Inter', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.chat-container {
+  margin: 20px;
+  border: none;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 800px;
+  max-width: 800px;
+  background-color: black;
+  scroll-behavior: smooth;
+  overflow: auto;
+
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1;
 }
 
-.App-link {
-  color: #61dafb;
+.chat-container::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.chat-container::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color of the track */
 }
+
+.chat-container::-webkit-scrollbar-thumb {
+  background: #888; /* Color of the scrollbar */
+}
+
+.chat-container::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color of the scrollbar on hover */
+}
+
+.message {
+  padding-top: 10px;
+  padding-left: 20px;
+  border-radius: 10px;
+  max-height: 900px;
+  
+}
+
+.bot-message {
+  max-width: 500px;
+  
+}
+
+.user-message {
+  max-width: 500px;
+}
+
+.input-container {
+  display: flex;
+  margin-top: 10px;
+}
+
+
+
+.input-container input {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.input {
+  position: fixed;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #ccc;
+  width: 500px; /* Adjust width as needed */
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: rgb(30, 30, 30); /* Optional: Add background color */
+  box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.2); /* Optional: Add box shadow */
+}
+
+.input:focus{
+  border: 1px solid #007bff;
+}
+
+.input input {
+  flex: 1;
+  color: #ccc;
+  margin-right: 10px;
+  border: 0px solid transparent; /* Transparent border */
+  border-radius: 5px; /* Optional: Add border radius */
+  padding: 8px; /* Optional: Add padding */
+  background-color: rgb(30, 30, 30)
+}
+
+.input input:focus {
+  outline: none; /* Remove default focus outline */
+  
+}
+
+.input button {
+  padding: 8px 16px; /* Optional: Adjust padding */
+  background-color: #007bff; /* Optional: Button background color */
+  color: #fff; /* Optional: Button text color */
+  border: none; /* Optional: Remove border */
+  border-radius: 5px; /* Optional: Add border radius */
+  cursor: pointer;
+}
+
+.input button:hover {
+  background-color: #0056b3; /* Optional: Button hover background color */
+}
+
