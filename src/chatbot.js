@@ -6,6 +6,7 @@ import user from './user.png';
 import bot from './chatbot.png';
 import { Player } from '@lordicon/react';
 import man from './wired-outline-268-avatar-man.json';
+import send from './send.png';
 
 const Chatbot = () => {
   const [messages, setMessages] = useState([]);
@@ -140,7 +141,7 @@ const Chatbot = () => {
         onChange={(e) => setInputText(e.target.value)}
         placeholder="Type your message..."
       />
-      <button onClick={sendMessage}>Send</button>
+      <button onClick={sendMessage}><img src={send} width={20}></img></button>
       </div>
        
       </div>

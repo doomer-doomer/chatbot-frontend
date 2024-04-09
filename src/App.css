@@ -67,14 +67,14 @@
 
 .input {
   position: fixed;
-  bottom: 5%;
+  bottom: 5.5%;
   left: 50%;
   transform: translateX(-50%);
   color: #ccc;
-  width: 500px; /* Adjust width as needed */
+  width: 300px; /* Adjust width as needed */
   display: flex;
   justify-content: space-between;
-  padding: 10px;
+  padding: 4px;
   border: 1px solid black;
   border-radius: 10px;
   background-color: rgb(30, 30, 30); /* Optional: Add background color */
@@ -101,15 +101,19 @@
 }
 
 .input button {
-  padding: 8px 16px; /* Optional: Adjust padding */
-  background-color: #007bff; /* Optional: Button background color */
+  padding-top: 8px; /* Optional: Adjust padding */
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  background-color: #383838; /* Optional: Button background color */
   color: #fff; /* Optional: Button text color */
   border: none; /* Optional: Remove border */
   border-radius: 5px; /* Optional: Add border radius */
   cursor: pointer;
+  transition: all 0.5s ease-in-out;
 }
 
 .input button:hover {
-  background-color: #0056b3; /* Optional: Button hover background color */
+  background-color: black; /* Optional: Button hover background color */
 }
 
